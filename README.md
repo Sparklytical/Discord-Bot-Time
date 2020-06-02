@@ -9,6 +9,7 @@ Timezones are hard. This bot sits in your server's member list (the sidebar on t
 1. Clone this repository
 
 2. Run the following command
+
 ```sh
 $ npm install
 ```
@@ -17,7 +18,7 @@ $ npm install
 
 4. Create a New App [here](https://discordapp.com/developers/applications/me) on the Discord Developers Dashboard
 
-    * Under the **bot** section, find the 'token', you'll need this in the next step
+   - Under the **bot** section, find the 'token', you'll need this in the next step
 
 5. Insert the token you acquired in 4 to the `config/bot.js` file. **Never share this token with anyone**
 
@@ -30,6 +31,7 @@ $ npm install
 ```sh
 $ npm run bot
 ```
+
 Once launched, the bot can be invited to (and configured for) as many servers as you like!
 
 1. Go back to your app [here](https://discordapp.com/developers/applications/me) on the Discord Developers Dashboard
@@ -37,10 +39,11 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 2. Select your app, find the client ID and copy it
 
 3. Append the client ID from step 2 onto the very end of the following URL
-    * **https://discordapp.com/oauth2/authorize?scope=bot&permissions=67177536&client_id=**
-    * This link can safely be shared with any other server admins that want to add your bot to their own server
-    * The permissions the bot requests are the ONLY ones that it requires (it especially needs to be able to edit its own nickname!)
-    * By default, the bot can only see, read, and appear in channels that @everyone has access to - meaning if you want to be able to see it in a staff/admin/moderator channel, you will have to manually add those permissions to the bot in your server
+
+   - **https://discordapp.com/oauth2/authorize?scope=bot&permissions=67177536&client_id=**
+   - This link can safely be shared with any other server admins that want to add your bot to their own server
+   - The permissions the bot requests are the ONLY ones that it requires (it especially needs to be able to edit its own nickname!)
+   - By default, the bot can only see, read, and appear in channels that @everyone has access to - meaning if you want to be able to see it in a staff/admin/moderator channel, you will have to manually add those permissions to the bot in your server
 
 4. Copy the URL and open it in a new browser tab
 
@@ -51,4 +54,3 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 7. Run the `time` command with the prefix set in the config (default is `?time`) and follow the instructions
 
 8. You're all set! Now you never have to worry about having to explain what "7PM CST" is to Europeans, or vice versa
-    
