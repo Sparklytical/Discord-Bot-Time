@@ -47,7 +47,7 @@ function handleMessage(msg) {
       case "set":
         title =
           "Sorry, it looks like you don't have permission to set the time for this server. Please contact a moderator or the owner.";
-        message = "Have them run `!time` for more details.";
+        message = "Have them run `?time` for more details.";
       default:
         if (!title && !message) {
           title = "Something went wrong. Try again in a little while.";

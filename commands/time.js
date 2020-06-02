@@ -37,11 +37,11 @@ module.exports.run = function (msg) {
         response.value =
           ":white_check_mark: All set for **" +
           msg.guild.name +
-          "**. \n\nFeel free to run `!time help` for configuration & more information.";
+          "**. \n\nFeel free to run `?time help` for configuration & more information.";
       } else {
         color = colorConfig.bad;
         response.value =
-          ":exclamation: Not yet configured. \n\nPlease run `!time start` to get set up. It's a super quick process.";
+          ":exclamation: Not yet configured. \n\nPlease run `?time start` to get set up. It's a super quick process.";
       }
       msg.channel.send(
         new Discord.RichEmbed({
@@ -75,7 +75,7 @@ module.exports.run = function (msg) {
                       "**, so to speed up the process we're setting your default timezone to **" +
                       defaultConfig.zones[msg.guild.region] +
                       "**. \n\n" +
-                      "If this is incorrect, or you would like to customize the timezone further, `!time zone` will provide you with more information. You can also use `!time format` to change how the time/date is displayed. \n\n:thumbsup: That's it! You're good to go.",
+                      "If this is incorrect, or you would like to customize the timezone further, `?time zone` will provide you with more information. You can also use `?time format` to change how the time/date is displayed. \n\n:thumbsup: That's it! You're good to go.",
                   },
                 ],
               })
@@ -137,7 +137,7 @@ module.exports.run = function (msg) {
                   fields: [
                     {
                       name:
-                        "Sorry, that's not a valid timezone. \nRun `!time zone` for full details.",
+                        "Sorry, that's not a valid timezone. \nRun `?time zone` for full details.",
                       value: "For now, we're sticking with " + thisServer.zone,
                     },
                   ],
@@ -213,7 +213,7 @@ module.exports.run = function (msg) {
             "_";
         } else {
           botServer.value =
-            "No configuration found! Please run `!time start` first.";
+            "No configuration found! Please run `?time start` first.";
         }
         msg.channel.send(
           new Discord.RichEmbed({
@@ -221,7 +221,7 @@ module.exports.run = function (msg) {
             title: botConfig.title,
             url: "",
             description:
-              "`!time server` Details about the bot's configuration on this server.",
+              "`?time server` Details about the bot's configuration on this server.",
             fields: [
               botServer,
               {
@@ -257,21 +257,21 @@ module.exports.run = function (msg) {
               {
                 name: "Commands",
                 value:
-                  "`!time help` Show this help menu" +
+                  "`?time help` Show this help menu" +
                   "\n" +
-                  "`!time server` Show details about the bot's config" +
+                  "`?time server` Show details about the bot's config" +
                   "\n" +
                   (hasPerms
-                    ? "`!time zone [region]` Set the timezone" + "\n"
+                    ? "`?time zone [region]` Set the timezone" + "\n"
                     : "") +
                   (hasPerms
-                    ? "`!time format [layout]` Set the time/date format" + "\n"
+                    ? "`?time format [layout]` Set the time/date format" + "\n"
                     : "") +
-                  "`!time defaults` Show the default configuration" +
+                  "`?time defaults` Show the default configuration" +
                   "\n" +
-                  "`!time bot` Show general bot statistics" +
+                  "`?time bot` Show general bot statistics" +
                   "\n" +
-                  "`!time in [region]` Show the time in a zone" +
+                  "`?time in [region]` Show the time in a zone" +
                   "\n",
               },
               {
@@ -314,7 +314,7 @@ module.exports.run = function (msg) {
             color: colorConfig.neutral,
             title: botConfig.title,
             url: "",
-            description: "`!time defaults` Original defaults for this bot.",
+            description: "`?time defaults` Original defaults for this bot.",
             fields: [
               {
                 name:
@@ -343,7 +343,7 @@ module.exports.run = function (msg) {
           new Discord.RichEmbed({
             color: colorConfig.neutral,
             title: botConfig.title,
-            description: "`!time in [zone]` Check a timezone!",
+            description: "`?time in [zone]` Check a timezone!",
             url: "",
             fields: [
               {
