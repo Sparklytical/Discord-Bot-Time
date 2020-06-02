@@ -1,8 +1,10 @@
-# Discord Time Bot
+# Discord Bot Time
 
 Timezones are hard. This bot sits in your server's member list (the sidebar on the right) and displays the time and date for your community. It's that simple.
 
-![Example Picture](https://i.imgur.com/oSi8lhK.png)
+Build using Discord.JS, MomentJS
+
+![Example Picture](https://raw.githubusercontent.com/EvilSpark/Discord-Bot-Time/master/Pictures/discord-time-bot.PNG)
 
 ## Installation
 
@@ -57,4 +59,4 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 
 ## TO-DO
 
-[] - To upgrade all dependencies and make it work with latest version.
+- [ ] To upgrade all dependencies and make it work with latest version.
