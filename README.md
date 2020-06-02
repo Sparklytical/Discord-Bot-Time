@@ -60,3 +60,11 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 ## TO-DO
 
 - [ ] To upgrade all dependencies and make it work with latest version.
+
+## Deploy to heroku.
+
+1. Fork it.
+2. Edit bot.js.template and add your bot token.
+3. Click on this button to deploy it.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

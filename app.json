@@ -1,0 +1,7 @@
+{
+  "name": "Discord Bot for Time",
+  "description": "A bot using Discord.js and MomentJS",
+  "repository": "https://github.com/EvilSpark/Discord-Bot-Time",
+  "logo": "https://www.hackathon-stuttgart.de/wordpress/wp-content/uploads/2017/10/Heroku_logo_white.png",
+  "keywords": ["node", "discord", "moment"]
+}
