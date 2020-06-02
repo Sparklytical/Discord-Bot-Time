@@ -54,3 +54,7 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 7. Run the `time` command with the prefix set in the config (default is `?time`) and follow the instructions
 
 8. You're all set! Now you never have to worry about having to explain what "7PM CST" is to Europeans, or vice versa
+
+## TO-DO
+
+[] - To upgrade all dependencies and make it work with latest version.
