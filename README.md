@@ -60,6 +60,7 @@ Once launched, the bot can be invited to (and configured for) as many servers as
 ## TO-DO
 
 - [ ] To upgrade all dependencies and make it work with latest version.
+- [ ] To provide an invite URL after hosting it in some stable place.
 
 ## Deploy to heroku.
 
