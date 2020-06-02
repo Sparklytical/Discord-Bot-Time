@@ -15,7 +15,8 @@
     ""
   ],
   "scripts": {
-    "bot": "node ./index.js"
+    "bot": "node ./index.js",
+    "start": "nodemon ./index.js"
   },
   "repository": "/discord-time-bot",
   "private": true,
@@ -23,6 +24,7 @@
     "discord.js": "^11.0.0",
     "moment-timezone": "^0.5.11",
     "node-persist": "^2.0.10",
-    "node-schedule": "^1.2.1"
+    "node-schedule": "^1.2.1",
+    "nodemon": "^2.0.4"
   }
 }
